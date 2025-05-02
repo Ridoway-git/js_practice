@@ -37,3 +37,8 @@ c= 3;//i will be executed
 // Or an underscore (_)
 
 
+// this is single line comment 
+/*this is multiline comment*/
+
+document.getElementById('myH').innerHTML ="this is heading";
+document.getElementById('p1').innerHTML ="this is paragraph";
