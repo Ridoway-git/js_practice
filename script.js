@@ -253,3 +253,99 @@ const del = {
 delete del.age;
 
 document.getElementById('delete').innerHTML = del.firstName + " is " + del.age + " years old "+ "and his eye color is "  + del.eyecolor;
+
+const anotherobject = {
+    name: "john",
+    age: 23,
+    myCars :{
+      car1 : "Ford",
+      car2 : "Volvo",
+      car3: "Toyota"
+    }
+}
+
+document.getElementById('anotherobject').innerHTML = anotherobject.myCars.car2;    
+document.getElementById('anotherobject').innerHTML = anotherobject["myCars"]["car1"];
+
+const anotherDist = {
+  name : "ridoy",
+  age :23,
+  myCars : {
+    carName1 : "wow",
+    carName2 : "bmw",
+    carName3 : "tesla"
+  }
+}
+let p1 = "myCars";
+let p2 = "carName2"
+document.getElementById('diss').innerHTML = anotherDist[p1][p2];
+
+const personss ={
+  firstName : "ridoy",
+  lastName : "khan",
+  age : 23,
+  fullName : function () {
+    return this.firstName + " " + this.lastName; 
+  }
+};
+
+document.getElementById('anotherObj').innerHTML= personss.fullName();
+
+
+const anotherwow = {
+  firstName : "john",
+  lastName : "doe",
+  age: 34,
+  id: 444,
+};
+
+anotherwow.name = function() {
+  return (this.firstName + " " + this.lastName).toUpperCase();
+};
+
+document.getElementById('case').innerHTML = "my friend name is " + anotherwow.name();
+
+const lol = {
+  firstName : "ridoy",
+  lastName : "khan",
+  id : 333,
+};
+
+document.getElementById('ro').innerHTML = lol;
+
+
+const khamuna = {
+  fistName : "john",
+  lastName : "doe",
+  age: 44,
+  city : "new york"
+};
+
+document.getElementById('khao').innerHTML = khamuna.fistName + " " + khamuna.lastName + " and his age is " + khamuna.age + " and he lives in "+ khamuna.city;
+
+
+const haha = {
+  name : "ridoy",
+  age : 33,
+  city : "new york"
+};
+
+let text = "";
+for (let x in haha) {
+  text += haha[x]; + " ";
+}
+
+document.getElementById('intloop').innerHTML = text;
+const haga = {
+  name: "ridoy",
+  age : 23,
+  city : "dhaka"
+};
+
+let texto = "";
+for (let x in haga) {
+  texto += haga[x] + " ";
+}
+
+document.getElementById('a').innerHTML = texto;
+
