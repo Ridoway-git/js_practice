@@ -349,3 +349,174 @@ for (let x in haga) {
 
 document.getElementById('a').innerHTML = texto;
 
+const lo = {
+  name : "ridoy",
+  age : 33,
+  city : "rajshahi"
+};
+
+const  myArray = Object.values(lo);
+document.getElementById('b').innerHTML = myArray;
+
+const fruits =  {
+  Banana:300 , Orange: 200, Apples: 100
+};
+
+let text33 = "";
+
+for (let [fruit, amount ] of Object.entries(fruits)) {
+  text33 += fruit + " : " + amount + "<br>";
+
+}
+
+document.getElementById('fruits').innerHTML= text33;
+
+const p11 = {
+  name: "ridoy",
+  age: 22,
+  city : "dhaka"
+};
+
+document.getElementById('rido').innerHTML = JSON.stringify(p11);
+
+function paappaa (first, last, age, eye) {
+  this.firtName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyecolor = eye;
+}
+
+const myFather = new paappaa("john", "doe", 44, "blue");
+
+document.getElementById("kkk").innerHTML = myFather.age;
+
+function ooo (first, last, age, eye) {
+  this.firstname = first;
+  this.lastname = last;
+  this.age = age;
+  this.eyecolor = eye;
+}
+
+const myFathero = new ooo ("ridoy", "khan", 33, "black");
+const myMother = new ooo ("janina" ,"khan" , 23, "blue");
+
+document.getElementById("aaaa").innerHTML = "my father is " + myFathero.age + " my mother is " + myMother.age + " years old";
+
+function ada(first,last,age,color)  {
+  this.firstname = first;
+  this.lastname = last;
+  this.age = age;
+  this.eyecolor = color;
+  this.nationality = "english";
+}
+
+const myFatther= new ada ("john" , "khan", 33, "black" );
+const myMotther = new ada("johny" ,"aktar", 34, "blue");
+
+document.getElementById('ow').innerHTML = "my father is " + myFatther.nationality + "my mother is" + myMotther.nationality; 
+
+
+function lll (first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eye = eye;
+  this.fullName = function () 
+  {
+    return this.firstName + " " + this.lastName
+  };
+}
+
+const kkk = new lll ("john", "kh", 22, "black");
+
+document.getElementById("lol").innerHTML = "my father is " + kkk.fullName();
+
+
+function koop (first, last, age, eye){
+  this.firstname = first;
+  this.lastname = last;
+  this.age = age;
+  this.color = eye;
+}
+
+const myF = new koop("john", "loop", 33, "black");
+const myM = new  koop ("johmno", "karima" , 33, "blue");
+
+myM.changeName = function(name) {
+  this.lastname = name;
+}
+
+myM.changeName ("doe");
+
+document.getElementById('changeName').innerHTML = "my mother's last name is"+ myM.lastname;
+
+function pap (firstname,lastname,age,color) {
+  this.firstname = firstname;
+  this.lastname = lastname;
+  this.age = age;
+  this.color = color;
+}
+
+const myfff = new pap ("sally", "aaa", 23, "black") ;
+pap.prototype.changeName = function (name) {
+  this.lastname = name;
+}
+
+
+myfff.changeName("doe");
+
+document.getElementById("add").innerHTML = "my mother last name is" + myfff.lastname;
+
+function displayDate () {
+  document.getElementById('aas').innerHTML = Date();
+}
+
+let wows = "We are the so-called \"Vikings\" from the north.";
+document.getElementById('aaww').innerHTML= wows;
+let textaa = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById('char').innerHTML = textaa.length;
+
+let lap = 
+"jhon";
+let lap2 = new String("john");
+
+document.getElementById('wwp').innerHTML = typeof lap + " and " + typeof lap2;
+const namre = "w3schools";
+let letters = namre.at(2); //output should be s
+document.getElementById('w3').innerHTML= letters;
+
+const anoname = "ridoy";
+let wowsa = anoname[2];
+document.getElementById('anothermethod').innerHTML= wowsa;
+let textks = "apple, banana, guava";
+let part = textks.slice(3,9);
+document.getElementById('slice').innerHTML= part;
+
+
+let con1= "hello";
+let con2 = "world";
+let con3= con1.concat(" ", con2);
+
+document.getElementById('concat').innerHTML = con3;
+
+let as =  "          Hello world";
+let as2 = as.trim();
+
+document.getElementById('trimmer').innerHTML = "the as char is " + as.length + "and the as2 is " + as2.length;
+let tla = "please a where 'locate' ridoy";
+let index = tla.indexOf("ridoy");
+document.getElementById('index').innerHTML = index;
+let index2 = "please locate where 'locate' occurs";
+let indexo = index2.indexOf("john");
+document.getElementById("notFound").innerHTML = indexo;
+
+let sl  = "the rain in SPAIN stays  mainly in the   plain"
+const myAr = sl.match("ain");
+document.getElementById("wol").innerHTML= myAr;
+
+let kka = "i love cats cats are easy to love"
+const interior =  kka.matchAll("cats");
+document.getElementById("da").innerHTML = Array.from(interior);
+
+let naa = "hello world,welcome to the universe";
+document.getElementById("include").innerHTML = naa.includes("world");
