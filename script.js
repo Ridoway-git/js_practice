@@ -520,3 +520,53 @@ document.getElementById("da").innerHTML = Array.from(interior);
 
 let naa = "hello world,welcome to the universe";
 document.getElementById("include").innerHTML = naa.includes("world");
+
+let tempo = `he is often called "johny"`;
+document.getElementById("temp").innerHTML= tempo;
+
+let tempoo = `he
+is
+good 
+as 
+he`;
+document.getElementById('loop').innerHTML= tempoo;
+
+let firstNameo = "john";
+let lastNameo = "Doe";
+
+let tl = `Welcome ${firstNameo}, ${lastNameo}!`;
+
+document.getElementById("lo").innerHTML= tl;
+
+let header = "Template Strings";
+let tags = ["template strings","javascript","es6"];
+
+let html = `<h2>${header}</h2><ul>`;
+for(const x of tags ) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+document.getElementById("templ").innerHTML= html;
+
+let mynumner = 2;
+let yoo= "";
+let counter = 0;
+while(mynumner != Infinity) {
+  mynumner =  mynumner * mynumner;
+  yoo = yoo + mynumner + "<br>"; 
+  counter ++;
+
+}
+
+document.getElementById("mma").innerHTML = yoo;
+
+let ala  = 2/0;
+let apa = -2/0;
+
+document.getElementById('al').innerHTML = ala + "<br>" + apa;
+
+let aal = 444444444444444;
+let aoa= 9999999999999999;
+
+document.getElementById('nuo').innerHTML = aal + "<br>" + aoa;
