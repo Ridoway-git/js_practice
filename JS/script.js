@@ -147,3 +147,5 @@
 
 // console.log(myChildren);
 
+const lol = ["banan", "orange", "apple", "mango"];
+console.log(lol.copyWithin(2,0));
