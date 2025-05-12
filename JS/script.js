@@ -147,5 +147,28 @@
 
 // console.log(myChildren);
 
-const lol = ["banan", "orange", "apple", "mango"];
-console.log(lol.copyWithin(2,0));
+// console.log(lol.copyWithin(2,0));
+
+
+
+// const temp = [27,28,30,40,42,35,30];
+// let high = temp.findLast(x => x > 40);
+// console.log(high);
+
+// const temp = [20,30,40,50,60];
+// let high = temp.findLastIndex(x => x > 30);
+// console.log(high);
+
+
+// const cars = ["audi", "bmw", "toyota"];
+// cars[0]= "saab";
+// cars.push("amar");
+// console.log(cars);
+
+
+const cars = ["saab", "volvo", "bmw"]; //output should be saab
+{
+    const cars = ["toyota", "bmw", "saab"]; //output should be toyota
+}
+
+console.log(cars[0]); //output
