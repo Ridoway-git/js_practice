@@ -166,9 +166,16 @@
 // console.log(cars);
 
 
-const cars = ["saab", "volvo", "bmw"]; //output should be saab
-{
-    const cars = ["toyota", "bmw", "saab"]; //output should be toyota
-}
+// const cars = ["saab", "volvo", "bmw"]; //output should be saab
+// {
+//     const cars = ["toyota", "bmw", "saab"]; //output should be toyota
+// }
 
-console.log(cars[0]); //output
+// console.log(cars[0]); //output
+
+// const d = new Date();
+// console.log(d);
+
+const date = new Date();
+
+console.log(date);
